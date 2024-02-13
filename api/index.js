@@ -2,7 +2,7 @@ import express from 'express'
 // import cors from 'cors'
 // import env from '~/config/environment'
 
-import { CONNECT_DB } from '~/config/mongodb'
+// import { CONNECT_DB } from '~/config/mongodb'
 // import { APIs_V1 } from '~/routes/v1'
 // import { errorHandlingMiddleware } from '~/middlewares/errorHandlingMiddleware'
 
@@ -23,11 +23,13 @@ const START_SERVER= () => {
   })
 }
 
-console.log('1. Connecting to mongodb')
-CONNECT_DB()
-  .then(() => {console.log('2. Connected to mongodb')})
-  .then(() => {START_SERVER()})
-  .catch(error => {
-    console.log(error)
-    process.exit()
-  })
+START_SERVER()
+
+// console.log('1. Connecting to mongodb')
+// CONNECT_DB()
+//   .then(() => {console.log('2. Connected to mongodb')})
+//   .then(() => {START_SERVER()})
+//   .catch(error => {
+//     console.log(error)
+//     process.exit()
+//   })
