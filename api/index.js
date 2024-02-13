@@ -1,5 +1,5 @@
 import express from 'express'
-// import cors from 'cors'
+import cors from 'cors'
 // import env from '../src/config/environment'
 
 import { CONNECT_DB } from '../src/config/mongodb.js'
