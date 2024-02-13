@@ -12,7 +12,7 @@ const START_SERVER= () => {
   app.use(cors())
 
   app.use('/v1', APIs_V1)
-
+  app.get('/api', (req, res) => {res.json({message:123})})
   //middleware xử lý lỗi tập trung
   app.use(errorHandlingMiddleware)
   app.listen(env.APP_PORT, env.APP_HOST, () => {
