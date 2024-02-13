@@ -4,7 +4,7 @@ import env from '../src/config/environment'
 
 import { CONNECT_DB } from '../src/config/mongodb.js'
 // import { APIs_V1 } from '../src/routes/v1'
-// import { errorHandlingMiddleware } from '~/middlewares/errorHandlingMiddleware'
+import { errorHandlingMiddleware } from '../src/middlewares/errorHandlingMiddleware.js'
 
 const START_SERVER= () => {
   const app = express()
