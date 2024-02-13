@@ -1,6 +1,6 @@
 import Joi from 'joi'
 import { ObjectId } from 'mongodb'
-import { GET_DB } from '~/config/mongodb'
+import { GET_DB } from '../config/mongodb'
 import { EnrollModel } from './enrollModel'
 
 const STUDENT_COLLECTION_NAME = 'students'

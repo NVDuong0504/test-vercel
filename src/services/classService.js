@@ -1,6 +1,5 @@
 import { ObjectId } from 'mongodb'
 import { classModel } from '../models/classModel'
-import { StudentModel } from '~/models/studentModel'
 import { studentService } from './studentService'
 import { enrollService } from './enrollService'
 import { AttendanceService } from './attendanceService'

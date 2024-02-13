@@ -1,8 +1,7 @@
 /* eslint-disable no-useless-catch */
 import Joi, { valid } from 'joi'
 import { ObjectId } from 'mongodb'
-import { GET_DB } from '~/config/mongodb'
-import { StudentModel } from './studentModel'
+import { GET_DB } from '../config/mongodb'
 
 const CLASS_COLLECTION_NAME = 'classes'
 const CLASS_COLLECTION_SCHEMA = Joi.object({

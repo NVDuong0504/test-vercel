@@ -1,5 +1,5 @@
-import Joi, { func, valid } from 'joi'
-import { GET_DB } from '~/config/mongodb'
+import Joi from 'joi'
+import { GET_DB } from '../config/mongodb'
 import { AttendanceModel } from './attendanceModel'
 import { ObjectId } from 'mongodb'
 import { StudentModel } from './studentModel'

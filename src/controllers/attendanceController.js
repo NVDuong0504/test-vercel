@@ -1,5 +1,5 @@
 import { StatusCodes } from 'http-status-codes'
-import { AttendanceService } from '~/services/attendanceService'
+import { AttendanceService } from '../services/attendanceService'
 
 
 const getClass = async (req, res, next) => {

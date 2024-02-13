@@ -1,8 +1,6 @@
-import express from 'express';
-import { StatusCodes } from 'http-status-codes';
-import { StudentController } from '~/controllers/studentController';
-import { studentService } from '~/services/studentService';
-import { studentValidation } from '~/validations/studentValidation';
+import express from 'express'
+import { StudentController } from '../../controllers/studentController'
+import { studentValidation } from '../../validations/studentValidation'
 
 const Router = express.Router();
 

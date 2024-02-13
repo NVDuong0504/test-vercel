@@ -1,5 +1,5 @@
 import { StatusCodes } from 'http-status-codes'
-import { enrollService } from '~/services/enrollService'
+import { enrollService } from '../services/enrollService'
 
 
 const createNew = async ( req, res, next ) => {

@@ -1,4 +1,4 @@
-import { AttendanceModel } from '~/models/attendanceModel'
+import { AttendanceModel } from '../models/attendanceModel'
 
 const getClass = async ( data ) => {
   try {

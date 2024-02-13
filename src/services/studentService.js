@@ -1,11 +1,11 @@
 import { ObjectId } from 'mongodb'
-import { AttendanceModel } from '~/models/attendanceModel';
-import { EnrollModel } from '~/models/enrollModel';
-import { StudentModel } from '~/models/studentModel'
-import { TuitionFeeModel } from '~/models/tuitionFeeModel';
-import { enrollService } from './enrollService';
-import { AttendanceService } from './attendanceService';
-import { TuitionFeeService } from './tuitionFee';
+import { AttendanceModel } from '../models/attendanceModel';
+import { EnrollModel } from '../models/enrollModel';
+import { StudentModel } from '../models/studentModel'
+import { TuitionFeeModel } from '../models/tuitionFeeModel';
+import { enrollService } from '../services/enrollService'
+import { AttendanceService } from '../services/attendanceService';
+import { TuitionFeeService } from '../services/tuitionFee';
 
 const createNew = async (reqBody) => {
   try {
