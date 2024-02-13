@@ -1,15 +1,32 @@
 import express from 'express'
+import cors from 'cors'
+import env from './config/environment'
 
-const app = express()
+import { CONNECT_DB, GET_DB } from './config/mongodb'
+import { APIs_V1 } from './routes/v1'
+import { StatusCodes } from 'http-status-codes'
+import { errorHandlingMiddleware } from './middlewares/errorHandlingMiddleware'
 
-app.get('/api/home', (req, res) => {
-  res.json({message:'message from home'})
-})
+const START_SERVER= () => {
+  const app = express()
+  app.use(express.json())
+  app.use(cors())
 
-app.get('/api/about', (req, res) => {
-  res.json({message:'message from about'})
-})
+  app.use('/v1', APIs_V1)
 
-app.listen(5000, () => {
-  console.log(123)
-})
+  //middleware xử lý lỗi tập trung
+  app.use(errorHandlingMiddleware)
+  app.listen(env.APP_PORT, env.APP_HOST, () => {
+    // eslint-disable-next-line no-console
+    console.log(`3. Hello ${env.AUTHOR}, I am running at ${ env.APP_PORT }:${  env.APP_HOST }`)
+  })
+}
+
+console.log('1. Connecting to mongodb')
+CONNECT_DB()
+  .then(() => {console.log('2. Connected to mongodb')})
+  .then(() => {START_SERVER()})
+  .catch(error => {
+    console.log(error)
+    process.exit()
+  })
