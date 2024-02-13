@@ -3,7 +3,7 @@ import express from 'express'
 // import env from '~/config/environment'
 
 import { CONNECT_DB } from '../src/config/mongodb.js'
-// import { APIs_V1 } from '~/routes/v1'
+import { APIs_V1 } from '../src/routes/v1'
 // import { errorHandlingMiddleware } from '~/middlewares/errorHandlingMiddleware'
 
 const START_SERVER= () => {
