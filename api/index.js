@@ -2,7 +2,7 @@ import express from 'express'
 // import cors from 'cors'
 // import env from '~/config/environment'
 
-import { CONNECT_DB } from '~/config/mongodb'
+import { CONNECT_DB } from '../src/config/mongodb.js'
 // import { APIs_V1 } from '~/routes/v1'
 // import { errorHandlingMiddleware } from '~/middlewares/errorHandlingMiddleware'
 
