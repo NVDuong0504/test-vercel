@@ -1,11 +1,10 @@
 import express from 'express'
 import cors from 'cors'
-import env from './config/environment'
+import env from '~/config/environment'
 
-import { CONNECT_DB, GET_DB } from './config/mongodb'
-import { APIs_V1 } from './routes/v1'
-import { StatusCodes } from 'http-status-codes'
-import { errorHandlingMiddleware } from './middlewares/errorHandlingMiddleware'
+import { CONNECT_DB } from '~/config/mongodb'
+import { APIs_V1 } from '~/routes/v1'
+import { errorHandlingMiddleware } from '~/middlewares/errorHandlingMiddleware'
 
 const START_SERVER= () => {
   const app = express()
