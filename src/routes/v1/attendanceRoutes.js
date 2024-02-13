@@ -1,6 +1,6 @@
 import express from 'express'
-import { AttendanceController } from '~/controllers/attendanceController'
-import { AttendanceValidation } from '~/validations/attendanceValidation'
+import { AttendanceController } from '../controllers/attendanceController'
+import { AttendanceValidation } from '../validations/attendanceValidation'
 
 const Router = express.Router()
 

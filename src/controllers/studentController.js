@@ -1,6 +1,6 @@
 import { StatusCodes } from 'http-status-codes'
 import { ObjectId } from 'mongodb'
-import { studentService } from '~/services/studentService'
+import { studentService } from '../services/studentService'
 
 const createNew = async ( req, res, next ) => {
   try {

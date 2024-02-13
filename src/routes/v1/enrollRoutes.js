@@ -1,6 +1,6 @@
 import express from 'express'
-import { enrollController } from '~/controllers/enrollController';
-import { enrollValidation } from '~/validations/enrollValidation';
+import { enrollController } from '../controllers/enrollController';
+import { enrollValidation } from '../validations/enrollValidation';
 
 const Router = express.Router();
 

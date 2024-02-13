@@ -1,6 +1,6 @@
 import express from 'express'
-import { TuitionFeeController } from '~/controllers/tuitionFeeController'
-import { TuitionFeeValidation } from '~/validations/tuitionFeeVaidation'
+import { TuitionFeeController } from '../controllers/tuitionFeeController'
+import { TuitionFeeValidation } from '../validations/tuitionFeeVaidation'
 
 const Router = express.Router()
 

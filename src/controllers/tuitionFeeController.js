@@ -1,5 +1,5 @@
 import { StatusCodes } from 'http-status-codes'
-import { TuitionFeeService } from '~/services/tuitionFee'
+import { TuitionFeeService } from '../services/tuitionFee'
 
 const calcClassTuitionFee = async ( req, res, next ) => {
   try {

@@ -1,5 +1,5 @@
 import { ObjectId } from 'mongodb'
-import { EnrollModel } from '~/models/enrollModel'
+import { EnrollModel } from '../models/enrollModel'
 
 const createNew = async (data) => {
   try {

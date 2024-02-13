@@ -1,8 +1,8 @@
 import express from 'express'
 import { StatusCodes } from 'http-status-codes'
 
-import { classValidation } from '~/validations/classValidation'
-import { classController } from '~/controllers/classController'
+import { classValidation } from '../validations/classValidation'
+import { classController } from '../controllers/classController'
 
 const Router = express.Router()
 

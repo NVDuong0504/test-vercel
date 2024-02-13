@@ -1,6 +1,6 @@
 import { StatusCodes } from 'http-status-codes'
 import Joi from 'joi'
-import ApiError from '~/utils/ApiError'
+import ApiError from '../utils/ApiError'
 
 const getClass = async( req, res, next ) => {
   const classId = req.params.id

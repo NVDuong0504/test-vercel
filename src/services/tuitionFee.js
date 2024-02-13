@@ -1,4 +1,4 @@
-import { TuitionFeeModel } from '~/models/tuitionFeeModel'
+import { TuitionFeeModel } from '../models/tuitionFeeModel'
 
 const calcClassTuitionFee = async (data) => {
   try {

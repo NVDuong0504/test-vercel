@@ -1,5 +1,5 @@
 import Joi, { object } from 'joi'
-import { GET_DB } from '~/config/mongodb'
+import { GET_DB } from '../config/mongodb'
 import { StudentModel } from './studentModel'
 import { classModel } from './classModel'
 import { ObjectId } from 'mongodb'
